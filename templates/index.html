@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编号验证</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>编号验证</h1>
+        <form id="verifyForm">
+            <label for="serialNumber">请输入编号：</label>
+            <input type="text" id="serialNumber" name="serialNumber" required>
+            <button type="submit">验证</button>
+        </form>
+        <p id="result"></p>
+        <img id="image" alt="验证结果" style="display:none;">
+        <p id="description" style="display:none;"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
